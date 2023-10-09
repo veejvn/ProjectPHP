@@ -1,0 +1,25 @@
+{
+    "name": "hoash/project",
+    "description": "CT480 project",
+    "require": {
+        "illuminate/database": "^9.52",
+        "league/plates": "^3.5",
+        "illuminate/config": "^9.52"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Huynh Huy Hoa",
+            "email": "huynhhuyhoatt@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,235 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: #f5d5c3b1;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header-cell"
+        "main-cell"
+        "footer-cell";
+}
+/* Header Start */
+header {
+    grid-area: header-cell;
+    display: grid;
+    grid-template-rows: auto 50px;
+    background-color: #4a1d22e6;
+    box-sizing: border-box;
+    grid-template-areas: "upper" "lower";
+}
+.upper {
+    grid-area: "upper";
+    box-sizing: border-box;
+}
+.search {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.text-search {
+    
+    background: #f3f4f5;
+    width: 80%;
+    height: 37px;
+    font-size: 14px;
+    border-radius: 2px 0 0 2px;
+    border: none;
+    color:#000;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.submit-btn-search {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    width: 40px;
+    height: 40px;
+    background: #421a1f;
+    /* padding: 5px 10px 10px 10px; */
+    border: none;
+    border-radius: 0 2px 2px 0;
+}
+form>i:hover {
+    background-color: #000000;
+}
+.inf{
+    display: block;
+    margin: 30px 0px 0px 0px;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+}
+a > span{
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.icon {
+    margin: 0px;
+    padding: 10px 10px 10px 11px;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    color: #421a1f;
+    background-color: #FFF;
+}
+div > a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+li > a:hover{
+    text-decoration: none;
+}
+.lower{
+    grid-area: "lower";
+    box-sizing: border-box;
+    padding-top: 20px;
+    height: 50px;
+    margin-left: 100px;
+}
+.main-menu{
+    display: flex;
+    list-style: none;
+}
+.main-menu > li{
+    margin-left: 10px;
+}
+.main-menu > li > a{
+    
+    font-weight: 500;
+    color: white;
+}
+.row {
+    color: #fff;
+    font-size: 17px;
+}
+/* Header End */
+main {
+    grid-area: main-cell;
+}
+.wrapper_bread{
+    width: 100%;
+    height: 300px;
+    background-image: url('assets/images/breadcrumb_bg.webp') ;
+    background-repeat: none;
+    background-size: cover;
+    background-position-y: center;
+    
+    
+}
+.wrapper_bread .content{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    align-content: center;   
+}
+.wrapper_bread .content .text{
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: center;
+    color: white;
+}
+/* Footer start */
+.footer_content{
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+p > a:hover{
+    color: gold;
+}
+/* Footer end */
+/* TRANG SAN PHAM */
+.title_sampham {
+    width: 500px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+}
+.card {
+    width: 300px;
+    height: 600px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.imgcrop {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.order {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.numberorder {
+    margin-bottom: 3px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-body {
+    height: 100px;
+    text-align: center;
+    color: black;
+}
+/* Login-Page start */
+.login-form{
+    width: 500px;
+    height: 400px;
+    margin: 50px auto 50px;
+    box-sizing: border-box;
+    padding: 50px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+.login-text{
+    font-weight: 500;   
+}
+.login-input{
+    width: 200px;
+}
+.login-btn{
+    width: 200px;
+    background-color: #421a1f;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+}
+.login-form > form > a{
+    color: #421a1f;
+}
+.login-form > form >a:hover{
+    color: blue;
+}
+
+/* Login Page */
+.login_form{
+    width: 400px;
+    margin: 200px auto;
+    border: 1px solid grey;
+    padding: 50px;
+    border-radius: 4px;
+}
