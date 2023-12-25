@@ -4,7 +4,11 @@
     "require": {
         "illuminate/database": "^9.52",
         "league/plates": "^3.5",
-        "illuminate/config": "^9.52"
+        "illuminate/config": "^9.52",
+        "phpmailer/phpmailer": "^6.9",
+        "illuminate/pagination": "^9.52",
+        "symfony/http-foundation": "^7.0",
+        "symfony/var-dumper": "^6.4"
     },
     "license": "MIT",
     "autoload": {

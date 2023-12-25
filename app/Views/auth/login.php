@@ -1,22 +1,23 @@
 <?php $this->layout(config('view.layout')); ?>
 <?php $this->start("page"); ?>
-<style>
-    .login_form{
-    width: 400px;
-    margin: 50px auto;
-    color: grey;
-    }   
-</style>
 <div class="login_form">
-        <form>
+        <form action="/login" method="POST">
+
+        <?php if(!empty($errors)) : ?>
+          <div class="alert alert-danger">
+          <ul>
+            <?php foreach($errors as $err){echo "<li style=\"list-style: none;\"></li>$err</li>";}?>
+          </ul>
+          </div>
+        <?php endif; ?>
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="text" id="" class="form-control" placeholder="Username"/>
+              <input type="text" id="" class="form-control" placeholder="Username" name="username"/>
             </div>
           
             <!-- Password input -->
             <div class="form-outline mb-4">
-              <input type="password" id="" class="form-control" placeholder="Password"/>
+              <input type="password" id="" class="form-control" placeholder="Password" name="password"/>
             </div>
           
             <!-- 2 column grid layout for inline styling -->
@@ -25,13 +26,13 @@
                 <!-- Checkbox -->
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="" checked />
-                  <label class="form-check-label" for="form2Example34"> Remember me </label>
+                  <label class="form-check-label text-dark" for="form2Example34" name="remember_me"> Remember me </label>
                 </div>
               </div>
           
               <div class="col">
                 <!-- Simple link -->
-                <a href="#!">Forgot password?</a>
+                <a href="/recovery">Forgot password?</a>
               </div>
             </div>
           

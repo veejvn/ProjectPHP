@@ -5,7 +5,7 @@ return [
     "db" => [
         "driver" => "mysql",
         "host" => "localhost",
-        "database" => "",
+        "database" => "MyDB",
         "username" => "root",
         "password" => "",
         "charset" => "utf8mb4",

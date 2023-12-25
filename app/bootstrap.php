@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 define("BASE_PATH", __DIR__);
 define("ENCRYPTION_KEY", "!@#_________#@!");
 
@@ -19,6 +17,10 @@ foreach(glob($configPath . "*.php") as $configFile){
         require_once("$configFile")
     );
 }
+
+$request = \App\Http\Request::createFromGlobals();
+$session = new \App\Http\Session\Session();
+$session->start();
 
 $routesPath = BASE_PATH . DIRECTORY_SEPARATOR . "routes" . DIRECTORY_SEPARATOR;
 

@@ -1,5 +1,5 @@
 <footer>
-    <div class="container-fluid" style="background-image: url('assets/images/footer-bg.webp')">
+    <div class="container-fluid footer">
         <div class="row footer_content" >
             <div class="col-md-3">
                 <img src="assets/images/logo.webp" alt="">
@@ -13,24 +13,24 @@
                 <div>
                     <p>
                         <i class="fa fa-mobile" onclick=""></i>
-                        <a href="" class="">012345678</a>
+                        <a href="" class="footer_navigator">012345678</a>
                     </p>
                 </div>
                 <div>
                     <p>
                         <i class="fa fa-envelope" onclick=""></i>
-                        <a href="">info@anhhoabakery.vn</a>
+                        <a href="" class="footer_navigator">info@anhhoabakery.vn</a>
                     </p>
                 </div>
             </div>
             <div class="col-md-3">
                 <p><b>CHÍNH SÁCH</b></p>
                 <br>
-                <p><a href="#">Chính sách và quy định chung</a></p>
-                <p><a href="#">Chính sách giao dịch, thanh toán</a></p>
-                <p><a href="#">Chính sách đổi trả</a></p>
-                <p><a href="#">Chính sách bảo mật</a></p>
-                <p><a href="#">Chính sách vận chuyển</a></p>
+                <p><a href="#" class="footer_navigator">Chính sách và quy định chung</a></p>
+                <p><a href="#" class="footer_navigator">Chính sách giao dịch, thanh toán</a></p>
+                <p><a href="#" class="footer_navigator">Chính sách đổi trả</a></p>
+                <p><a href="#" class="footer_navigator">Chính sách bảo mật</a></p>
+                <p><a href="#" class="footer_navigator">Chính sách vận chuyển</a></p>
             </div>
             <div class="col-md-3">
                 <p><b>ANH HÒA BAKERY</b></p>
